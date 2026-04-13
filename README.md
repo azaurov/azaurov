@@ -25,7 +25,7 @@ Full-stack PWA that reads your profile + a job description and generates a tailo
 ### 📱 [DoomscrollGuard](https://github.com/azaurov/doomscrollguard) — Android Accessibility App
 > *Kotlin · Android SDK · AccessibilityService · ViewBinding · Material 3 · Firebase*
 
-Production Android app with a real `AccessibilityService` sliding-window scroll counter. Tracks 13 social media packages, fires a `NotificationCompat` alert mirrored to an Amazfit GTR 3 smartwatch via Zepp. Three independently configurable thresholds (scroll count / time window / cooldown) persisted via `SharedPreferences`. `BootReceiver` for post-reboot resilience. **Privacy by architecture: zero content read — event counts only.**
+Production-quality Android app (Kotlin, ViewBinding, Material 3) using `AccessibilityService` to detect doomscrolling via a sliding-window scroll-event counter across 13 tracked social media apps. Fires a `NotificationCompat` alert mirrored to an Amazfit GTR 3 via Zepp. Fully configurable thresholds (scroll count, time window, cooldown) persisted via `SharedPreferences`. Includes `BootReceiver` for post-reboot resilience. Privacy-first: zero content read — scroll event counts only. Built in `Android Studio`, versioned on `GitHub`, with `Firebase` project integration.
 
 ---
 
