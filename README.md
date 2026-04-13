@@ -64,12 +64,6 @@ Three programmatically generated illustrated PDF storybooks — Bukharian Jewish
 
 ---
 
-### ✡️ Hebrew Siddur & Trope Workbook
-> *Python · ReportLab · Noto Hebrew · CEFR curriculum design*
-
-25-page bilingual Hebrew/English educational workbook with full nikud, custom hybrid transliteration, vowel/trope tables, and CEFR A1–B2 lesson scaffolding. RTL BiDi corrected throughout.
-
----
 
 ## 🧰 Tech Stack
 
