@@ -36,7 +36,7 @@ Hydration reminder app using Jetpack `WorkManager` for reliable background sched
 
 ---
 
-### 🌍 Bukharian Language Learning App — Duolingo-style
+### 🌍 [Bukharian Language Learning App](https://github.com/azaurov/SilkRoadDuo) — Duolingo-style
 > *Expo · React Native · TypeScript*
 
 Cross-platform mobile app for **Bukharian Judeo-Tajik, Farsi, and Sogdian** — endangered languages with virtually no existing app coverage. Gamified lessons, vocabulary decks, hearts/XP/streaks, and four game modes. CEFR A1–B1 scaffolding.
