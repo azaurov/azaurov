@@ -1,5 +1,3 @@
-**Application Support Engineer** · Canton, MA · Seeking hybrid/on-site roles in Boston
-
 I spend my days keeping financial systems alive (production support, incident triage, Control-M, ServiceNow, SQL) — and my evenings building things that shouldn't exist yet.
 
 ---
