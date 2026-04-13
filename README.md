@@ -101,25 +101,8 @@ ITIL-aligned incident management · Root cause analysis · SLA ownership · Fina
 
 ## 📍 About Me
 
-Bukharian Jewish heritage · Central Asian history & linguistics · Genealogy research · Massachusetts LTC holder · Canton, MA
+Application Support Engineer based in the Greater Boston area, with a strong background in enterprise financial systems, incident management, and workflow automation. Passionate about building practical tools at the intersection of AI, systems reliability, and software engineering.
 
-Currently open to **hybrid or on-site Application/Production Support Engineer roles in the Boston area** (also considering remote EST/CST).
+Currently open to hybrid or on-site Application/Production Support Engineer roles in the Boston area (remote EST/CST considered).
 
 📧 azaurov@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/azaurov/)
-
-## Hi there 👋
-
-<!--
-**azaurov/azaurov** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
