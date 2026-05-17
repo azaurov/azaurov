@@ -1,3 +1,5 @@
+# azaurov
+
 I spend my days keeping financial systems alive (production support, incident triage, Control-M, ServiceNow, SQL) — and my evenings building things that shouldn't exist yet.
 
 ---
@@ -7,59 +9,46 @@ I spend my days keeping financial systems alive (production support, incident tr
 ### 🛡️ [SentinelWatch](https://github.com/azaurov/sentinelwatch) — AI Process Monitor
 > *Electron · Node.js · Anthropic Claude API · PowerShell · ps aux*
 
-Cross-platform desktop app that polls live OS processes every 5 seconds, detects hangs via CPU-delta analysis over configurable windows, and surfaces **Claude AI-generated triage recommendations** on demand — with one-click process kill. Works on Windows (PowerShell `Get-Process`) and Linux/macOS (`ps aux`). Secure `contextIsolation` IPC architecture.
+Cross-platform desktop app that polls live OS processes every 5 seconds, detects hangs via CPU-delta analysis over configurable windows, and surfaces **Claude AI-generated triage recommendations** for stuck processes.
 
 ---
 
-### 🤖 [AI Resume & Cover Letter Builder](https://github.com/azaurov/resume-builder) — Claude-Powered PWA
-> *React · Vite · Node.js/Express · Anthropic Claude API · Prompt Caching*
+### 🤖 [AI Resume & Cover Letter Builder](https://github.com/azaurov/resume_builder)
+> *TypeScript · React · Node.js/Express · Anthropic Claude API*
 
-Full-stack PWA that reads your profile + a job description and generates a tailored resume and cover letter in under 60 seconds. Features live token tracking, a debug panel, and PDF export. Prompt caching cuts API latency significantly on repeat calls.
-
----
-
-### 📱 [DoomscrollGuard](https://github.com/azaurov/doomscrollguard) — Android Accessibility App
-> *Kotlin · Android SDK · AccessibilityService · ViewBinding · Material 3 · Firebase*
-
-Production-quality Android app (Kotlin, ViewBinding, Material 3) using `AccessibilityService` to detect doomscrolling via a sliding-window scroll-event counter across 13 tracked social media apps. Fires a `NotificationCompat` alert mirrored to an Amazfit GTR 3 via Zepp. Fully configurable thresholds (scroll count, time window, cooldown) persisted via `SharedPreferences`. Includes `BootReceiver` for post-reboot resilience. Privacy-first: zero content read — scroll event counts only. Built in `Android Studio`, versioned on `GitHub`, with `Firebase` project integration.
+An AI-powered tool for instantly generating tailored resumes and cover letters. Reads your profile and job descriptions to generate personalized documents in seconds — ideal for rapid job applications and professional polish.
 
 ---
 
-### 💧 HydroReminder — Android WorkManager App
-> *Kotlin · Jetpack WorkManager · Android Notification API*
+### 🕸️ [mywebsite](https://github.com/azaurov/mywebsite)
+> *PHP · CSS*
 
-Hydration reminder app using Jetpack `WorkManager` for reliable background scheduling and persistent notification delivery — targeting correct behavior across Android battery optimization constraints.
-
----
-
-### 🌍 [Bukharian Language Learning App](https://github.com/azaurov/SilkRoadDuo) — Duolingo-style
-> *Expo · React Native · TypeScript*
-
-Cross-platform mobile app for **Bukharian Judeo-Tajik, Farsi, and Sogdian** — endangered languages with virtually no existing app coverage. Gamified lessons, vocabulary decks, hearts/XP/streaks, and four game modes. CEFR A1–B1 scaffolding.
+A role-based access control website for personal and project showcase. High-performance PHP backend and custom CSS—built as a learning ground for secure authentication, web layouts, and feature-rich profiles.
 
 ---
 
-### 🎨 AI Photo Colorization Tool
-> *Vanilla JS · Claude Vision API · Canvas API*
+### 🤝 [phpmyadmin](https://github.com/azaurov/phpmyadmin)
+> *PHP · JavaScript · Twig · SCSS*
 
-Web tool that uses Claude Vision for semantic region detection (sky, skin, foliage, fabric) and Canvas API pixel manipulation to colorize black-and-white photos with luminance-preserving blending. Includes a before/after comparison slider and graceful API-failure fallback to luminance-only mode.
-
----
-
-### ⚛️ Interactive Quantum Mechanics Simulator
-> *React · Expo · Canvas/SVG*
-
-Visualizes wave functions, superposition states, and measurement collapse interactively. Built out of curiosity; shipped because why not.
+A fork for custom tooling and experimentation with database management UIs. Tinkering with the legendary phpMyAdmin codebase to improve efficiency, tweak UI, and prototype extensions.
 
 ---
 
-### 📖 Illustrated Ancestral Storybook PDFs
-> *Python · ReportLab · Noto Fonts · BiDi/RTL*
+### 👻 [Pac-Man](https://github.com/azaurov/Pac-Man)
+> *HTML*
 
-Three programmatically generated illustrated PDF storybooks — Bukharian Jewish, Litvak Ashkenazi, and Iberian/Venezuelan ancestral narratives. Solved BiDi Hebrew RTL rendering, multi-script typography (Hebrew / Latin / Cyrillic), and complex multi-column layout challenges in ReportLab.
+A pure-HTML recreation of the arcade classic. A nostalgic side project focused on accessibility and fun browser dynamics.
 
 ---
 
+### 🤖 [Zeev](https://github.com/azaurov/Zeev)
+AI Companion for my Raspberry Pi Zero 2 W.
+- Built as a local conversational agent, using llama.cpp and running Qwen2.5-1.5B on ARM with speech and voice features.
+- Bio: Created to experiment with on-device AI assistants for home automation and playful interaction.
+
+---
+
+### ...plus more public and private projects!
 
 ## 🧰 Tech Stack
 
@@ -97,7 +86,7 @@ ITIL-aligned incident management · Root cause analysis · SLA ownership · Fina
 
 ## 📍 About Me
 
-Application Support Engineer based in the Greater Boston area, with a strong background in enterprise financial systems, incident management, and workflow automation. Passionate about building practical tools at the intersection of AI, systems reliability, and software engineering.
+Application Support Engineer based in the Greater Boston area, with a strong background in enterprise financial systems, incident management, and workflow automation. Passionate about building practical tools, open-source projects, and unique experiments in AI, productivity, and automation.
 
 Currently open to hybrid or on-site Application/Production Support Engineer roles in the Boston area (remote EST/CST considered).
 
