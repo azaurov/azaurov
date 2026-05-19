@@ -90,4 +90,4 @@ Application Support Engineer based in the Greater Boston area, with a strong bac
 
 Currently open to hybrid or on-site Application/Production Support Engineer roles in the Boston area (remote EST/CST considered).
 
-📧 azaurov@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/azaurov/)
+📧 azaurov@gmail.com · 🔗 [LinkedIn](https://www.linkedin.com/in/azaurov/) · 🌐 [sogdiana-gematria.net](https://sogdiana-gematria.net)
