@@ -42,9 +42,9 @@ A pure-HTML recreation of the arcade classic. A nostalgic side project focused o
 ---
 
 ### 🤖 [Zeev](https://github.com/azaurov/Zeev)
-AI Companion for my Raspberry Pi Zero 2 W.
-- Built as a local conversational agent, using llama.cpp and running Qwen2.5-1.5B on ARM with speech and voice features.
-- Bio: Created to experiment with on-device AI assistants for home automation and playful interaction.
+> *Python · Groq API · Piper TTS · Raspberry Pi Zero 2W*
+
+Personal AI companion running on a Raspberry Pi Zero 2W. Uses Groq cloud inference (auto-routes between 8B, 70B, and DeepSeek R1 models), Piper neural TTS for human-quality speech, and a keyword RAG system over conversation history. Supports English, Spanish, Russian, and Hebrew with language-appropriate voices. Available as a terminal REPL or mobile-friendly web UI with streaming responses, persistent memory, and web search.
 
 ---
 
