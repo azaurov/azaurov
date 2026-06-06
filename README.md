@@ -1,4 +1,6 @@
-# azaurov
+<div align="center">
+  <img src="header.svg" alt="Alex Zaurov — Prod Support by Day · AI Builder by Night" width="900"/>
+</div>
 
 I don't just support software — I build it. My production support background gives me a systems-level lens that makes my personal projects unusually well-engineered. I've shipped AI-powered web apps, cross-platform mobile apps, and desktop tools built with modern frameworks and cloud APIs.
 
