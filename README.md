@@ -58,6 +58,7 @@ Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Gro
 - **Torah RAG**: FTS5 SQLite corpus spanning Tanakh, Talmud, Zohar, Dead Sea Scrolls, and Sumerian literature — relevant passages injected into every Jewish/Kabbalistic query
 - **Quantum reasoning**: daily quantum circuit simulations (Qiskit) explore human-dilemma scenarios; insights accumulate over time and compound future reasoning
 - **Multilingual TTS**: Groq Orpheus (English), Google Translate TTS (Hebrew/Russian/Spanish), Piper neural TTS with auto-restart fallback — all on a 512 MB Pi Zero 2W
+- **Bluetooth audio**: pair headphones by voice ("scan for bluetooth", "pair my headphones") — all TTS and music routes through them when connected
 - **Web UI + device mode**: mobile-friendly SSE chat interface and a push-to-talk Whisplay HAT mode with thermal camera support
 
 ---
