@@ -51,9 +51,14 @@ A pure-HTML recreation of the arcade classic. A nostalgic side project focused o
 ---
 
 ### 🤖 [Zeev](https://github.com/azaurov/Zeev)
-> *Python · Groq API · Piper TTS · Raspberry Pi Zero 2W*
+> *Python · Groq API · Piper TTS · SQLite · Raspberry Pi Zero 2W*
 
-Personal AI companion running on a Raspberry Pi Zero 2W. Uses Groq cloud inference (auto-routes between 8B, 70B, and DeepSeek R1 models), Piper neural TTS for human-quality speech, and a keyword recognition system for hands-free voice interaction.
+Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Groq's 8B, 70B, and DeepSeek R1 models per message; falls back to a local Ollama server when offline.
+
+- **Torah RAG**: FTS5 SQLite corpus spanning Tanakh, Talmud, Zohar, Dead Sea Scrolls, and Sumerian literature — relevant passages injected into every Jewish/Kabbalistic query
+- **Quantum reasoning**: daily quantum circuit simulations (Qiskit) explore human-dilemma scenarios; insights accumulate over time and compound future reasoning
+- **Multilingual TTS**: Groq Orpheus (English), Google Translate TTS (Hebrew/Russian/Spanish), Piper neural TTS fallback — all on a 512 MB Pi Zero 2W
+- **Web UI + device mode**: mobile-friendly SSE chat interface and a push-to-talk Whisplay HAT mode with thermal camera support
 
 ---
 
