@@ -59,7 +59,7 @@ Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Gro
 - **Quantum reasoning**: daily quantum circuit simulations (Qiskit) explore human-dilemma scenarios; insights accumulate over time and compound future reasoning
 - **Multilingual TTS**: Groq Orpheus (English), Google Translate TTS (Hebrew/Russian/Spanish), Piper neural TTS with auto-restart fallback — all on a 512 MB Pi Zero 2W
 - **Bluetooth audio**: pair headphones by voice ("scan for bluetooth", "pair my headphones") — auto-detected at startup, all TTS and music routed and resampled (ffmpeg) to match A2DP format; physical disconnects (headphones powered off) detected automatically before each TTS call
-- **Phone calls (HFP)**: dial and receive calls via Bluetooth HFP; auto-detects voicemail (leaves message), IVR menus (navigates with DTMF), or live callers (converses naturally); call intent extracted from user input; TTS falls back Orpheus → Piper → gTTS when rate-limited
+- **Phone calls (HFP)**: dial and receive calls via Bluetooth HFP; auto-detects voicemail (leaves message), IVR menus (navigates with DTMF), or live callers (converses naturally); call intent extracted from user input; TTS falls back Orpheus → Piper → gTTS when rate-limited; aborts cleanly if phone isn't connected via HFP when dialing
 - **Web UI + device mode**: mobile-friendly SSE chat interface and a push-to-talk Whisplay HAT mode with thermal camera support
 
 ---
