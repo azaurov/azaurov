@@ -59,7 +59,8 @@ Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Gro
 - **Quantum reasoning**: daily quantum circuit simulations (Qiskit) explore human-dilemma scenarios; insights accumulate over time and compound future reasoning
 - **Multilingual TTS**: Groq Orpheus (English), Google Translate TTS (Hebrew/Russian/Spanish), Piper neural TTS with auto-restart fallback — all on a 512 MB Pi Zero 2W
 - **Bluetooth audio**: pair headphones by voice ("scan for bluetooth", "pair my headphones") — auto-detected at startup, all TTS and music routed and resampled (ffmpeg) to match A2DP format; physical disconnects (headphones powered off) detected automatically before each TTS call
-- **Phone calls (HFP)**: dial and receive calls via Bluetooth HFP; auto-detects voicemail (leaves message), IVR menus (navigates with DTMF), or live callers (converses naturally); speculative pre-generation runs during ringing so the voicemail message is ready at the beep; TTS chain is Orpheus → Cartesia (~100ms) → Piper → gTTS; aborts cleanly if phone isn't connected via HFP
+- **Phone calls (HFP)**: dial and receive calls via Bluetooth HFP; auto-detects voicemail, IVR, or live callers; speculative pre-generation so the voicemail message is ready at the beep; live calls carry full conversation history across turns; early-speech-onset detection prevents Whisper hallucinations on 8kHz SCO audio from misclassifying a real pickup as voicemail
+- **Quantum conversation scenarios** (`quantum_convo.py`): runs a quantum circuit over conversation directions (empathy, playfulness, depth, small talk) and uses the interference pattern to prioritize call topics — `python3 zeev/quantum_convo.py --name NAME --call NUMBER`
 - **Web UI + device mode**: mobile-friendly SSE chat interface and a push-to-talk Whisplay HAT mode with thermal camera support
 
 ---
