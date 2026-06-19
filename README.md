@@ -15,10 +15,15 @@ A cross-platform mobile app teaching 7 ancient and classical languages from the 
 
 ---
 
-### 🛡️ [SentinelWatch](https://github.com/azaurov/sentinelwatch) — AI Process Monitor
-> *Electron · Node.js · Anthropic Claude API · PowerShell · ps aux*
+### 🛡️ [SentinelWatch](https://github.com/azaurov/SentinelWatch) — AI Process Monitor
+> *Electron · Node.js · Groq API · contextBridge IPC · PowerShell · ps aux*
 
-Cross-platform desktop app that polls live OS processes every 5 seconds, detects hangs via CPU-delta analysis over configurable windows, and surfaces **Claude AI-generated triage recommendations**. Built with Electron for cross-platform compatibility and real-time process monitoring.
+Cross-platform Electron desktop app that polls live OS processes every 5 seconds, flags any process sustained at ≥10% CPU for 10+ minutes as `HANGING`, and surfaces **Groq AI-generated triage recommendations** on click. Built on Node 18+'s built-in `fetch` against Groq's OpenAI-compatible chat-completions endpoint — no LLM SDK dependency.
+
+- **Hang detection**: rolling per-process state tracked across polls; Windows CPU% derived from `Get-Process` CPU-time delta normalized by core count; Linux/macOS uses `ps aux` CPU% directly
+- **AI diagnosis via Groq**: default model `llama-3.3-70b-versatile`, overridable via `GROQ_MODEL`; structured output (What it is / Why hanging / Risk / Recommended action) parsed from a system-prompt template
+- **Stale-process freeze**: detail panel stays open after the selected process dies so you can finish reading the AI diagnosis, with a `⚠ PROCESS ENDED` marker and the Kill button disabled
+- **Security**: `contextIsolation: true`, `nodeIntegration: false`, all renderer access to the main process goes through a narrow audited `window.sentinel` API in `preload.js` (`onProcessUpdate` / `diagnoseProcess` / `killProcess`)
 
 ---
 
