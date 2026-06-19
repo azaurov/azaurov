@@ -58,7 +58,7 @@ A pure-HTML recreation of the arcade classic. A nostalgic side project focused o
 ### 🤖 [Zeev](https://github.com/azaurov/Zeev)
 > *Python · Groq API · Piper TTS · SQLite · Raspberry Pi Zero 2W*
 
-Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Groq's 8B, 70B, and DeepSeek R1 models per message; falls back to a local Ollama server when offline.
+Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Groq's 8B, 70B, and DeepSeek R1 models per message; falls back to a local Ollama server when offline. Per-model rate-limit tracking automatically falls back to 8B when 70B/R1 hits a Groq daily or burst limit — no errors surfaced to the user.
 
 - **Torah RAG**: FTS5 SQLite corpus spanning Tanakh, Talmud, Zohar, Dead Sea Scrolls, and Sumerian literature — "parsha"/"parshah"/"portion" queries trigger Torah DB lookup with 70B model and 1,200-token limit; RAG index capped at 500 messages to prevent OOM on 512 MB Pi
 - **Quantum reasoning**: daily quantum circuit simulations (Qiskit) explore human-dilemma scenarios; insights accumulate over time and compound future reasoning
@@ -66,7 +66,7 @@ Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Gro
 - **Bluetooth audio**: pair headphones by voice ("scan for bluetooth", "pair my headphones") — auto-detected at startup, all TTS and music routed and resampled (ffmpeg) to match A2DP format; physical disconnects (headphones powered off) detected automatically before each TTS call
 - **Phone calls (HFP)**: dial and receive calls via Bluetooth HFP; auto-detects voicemail, IVR, or live callers; speculative pre-generation so the voicemail message is ready at the beep; live calls carry full conversation history across turns; early-speech-onset detection prevents Whisper hallucinations on 8kHz SCO audio from misclassifying a real pickup as voicemail
 - **Quantum conversation scenarios** (`quantum_convo.py`): runs a quantum circuit over conversation directions (empathy, playfulness, depth, small talk) and uses the interference pattern to prioritize call topics — `python3 zeev/quantum_convo.py --name NAME --call NUMBER`
-- **Web UI + device mode**: mobile-friendly SSE chat interface and a push-to-talk Whisplay HAT mode with thermal camera support
+- **Web UI + device mode**: mobile-friendly SSE chat interface and a push-to-talk Whisplay HAT mode with thermal camera support; LLM errors logged to `data/zeev_errors.log` with specific display messages
 
 ---
 
