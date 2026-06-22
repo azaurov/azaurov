@@ -9,9 +9,14 @@ I don't just support software — I build it. My production support background g
 ## 🛠 What I Build
 
 ### 🌍 [Silk Road Duo](https://github.com/azaurov/SilkRoadDuo) — AI Language Learning Platform
-> *React Native · Expo · JavaScript · Anthropic Claude API*
+> *React Native · Expo · JavaScript · OpenRouter / Groq / Gemini*
 
-A cross-platform mobile app teaching 7 ancient and classical languages from the Silk Road (Bukharian, Farsi, Sogdian, Arabic, Uzbek, Hebrew, Aramaic). Features AI-generated dynamic lessons using Claude, multiple exercise types (MCQ, fill-in-the-blank, matching, word arrangement), XP-based progression, achievement tracking, and daily cultural facts. Each lesson is procedurally generated with accurate vocabulary, native script support, and romanized transliterations.
+A cross-platform language learning app teaching 7 ancient and classical languages of the Silk Road (Bukharian, Farsi, Sogdian, Arabic, Uzbek, Hebrew, Aramaic). **[Try it live →](https://azaurov.github.io/SilkRoadDuo/)**
+
+- **AI-generated lessons** — 20 exercises per session via OpenRouter / Groq / Gemini with auto-fallback on rate limits; accurate vocabulary, native script (RTL for Arabic/Hebrew/Farsi), and romanized transliterations
+- **4 exercise types** — MCQ, fill-in-the-blank, matching pairs, word arrangement; TTS for Arabic, Farsi, Hebrew, Uzbek
+- **Local user profiles** — multiple profiles per device, each with independent XP, daily streak, and achievements persisted in AsyncStorage across cold restarts
+- **PWA** — installable on iPhone via Safari → Share → Add to Home Screen; auto-deployed to GitHub Pages on every push; works offline after first load
 
 ---
 
