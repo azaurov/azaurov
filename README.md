@@ -66,6 +66,7 @@ A pure-HTML recreation of the arcade classic. A nostalgic side project focused o
 Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Groq's 8B, 70B, and DeepSeek R1 models per message; falls back to a local Ollama server when offline. Per-model rate-limit tracking automatically falls back to 8B when 70B/R1 hits a Groq daily or burst limit — no errors surfaced to the user.
 
 - **Torah RAG**: FTS5 SQLite corpus spanning Tanakh, Talmud, Zohar, Dead Sea Scrolls, and Sumerian literature — "parsha"/"parshah"/"portion" queries trigger Torah DB lookup with 70B model and 1,200-token limit; RAG index capped at 500 messages to prevent OOM on 512 MB Pi
+- **Weekly reflection**: every Sunday an LLM synthesizes the past week of conversations into a structured reflection (recurring themes, emotional patterns, open questions) stored in SQLite and injected into every system prompt — Zeev arrives at each conversation already briefed on the week
 - **Quantum reasoning**: daily quantum circuit simulations (Qiskit) explore human-dilemma scenarios; insights accumulate over time and compound future reasoning
 - **Multilingual TTS**: Groq Orpheus (English), Google Translate TTS (Hebrew/Russian/Spanish), Piper neural TTS with auto-restart fallback — all on a 512 MB Pi Zero 2W
 - **Bluetooth audio**: pair headphones by voice ("scan for bluetooth", "pair my headphones") — auto-detected at startup, all TTS and music routed and resampled (ffmpeg) to match A2DP format; physical disconnects (headphones powered off) detected automatically before each TTS call
