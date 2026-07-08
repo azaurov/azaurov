@@ -74,6 +74,7 @@ Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Gro
 - **Quantum conversation scenarios** (`quantum_convo.py`): runs a quantum circuit over conversation directions (empathy, playfulness, depth, small talk) and uses the interference pattern to prioritize call topics — `python3 zeev/quantum_convo.py --name NAME --call NUMBER`
 - **GPS / geolocation**: WiFi-triangulated location via Google Geolocation API (10–100m), beacondb fallback, IP fallback; reverse-geocoded to city/region via Nominatim; injected into context automatically on location queries
 - **Web UI + device mode**: mobile-friendly SSE chat interface and a push-to-talk Whisplay HAT mode with thermal camera (MLX90640) and Pi NoIR camera support; say "what do you see" in device mode to capture a photo and get a vision-model description (Llama 4 Scout)
+- **Voice-triggered LCD visuals**: say "show me some fire" or "do the matrix effect" in device mode and Zeev/Sarina renders demoscene-style fire, matrix rain, psychedelic, liquid, tunnel, plasma, or cartoon-face animations directly on the Whisplay LCD
 
 ---
 
