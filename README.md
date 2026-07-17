@@ -32,6 +32,19 @@ Cross-platform Electron desktop app that polls live OS processes every 5 seconds
 
 ---
 
+### 🚨 [Incident Commander](https://github.com/azaurov/Incident-Commander) — AI Incident Simulator & Postmortem Autopilot
+> *React · Vite · JavaScript · Groq API / OpenRouter · docx*
+
+An interactive incident triage simulator and automated post-mortem generator. Users can test their operational triage speed and diagnostic accuracy under pressure across multiple domains, or instantly parse messy incident chat logs, threads, and notes into professional, shippable retro documents using the **two-pass LLM pipeline** (Groq / OpenRouter).
+
+- **Incident Triage Simulator** — 4 simulated outage domains (Financial Ops, Job Scheduling, API Gateway, DB Replication) featuring drip-fed log feeds, active countdown timers, and diagnostic scoring metrics (severity, RCA hypothesis, escalation targets)
+- **Two-Pass Autopilot Pipeline** — Pass 1 extracts pure chronological timeline and isolation boundaries into structured JSON; Pass 2 builds executive-level summaries and Root Cause Analysis (RCA) narratives, preventing output structure drifting
+- **Section Regeneration** — surgical AI updates allowing you to refresh specific post-mortem sections (e.g. executive summary, action items) without recalculating the entire report
+- **Zero-Server Standalone App** — bundles all assets, styles, and Javascript inline into a single static `index.html` via `vite-plugin-singlefile`, allowing offline double-click operation
+- **DOCX & PWA Enabled** — client-side OpenXML generator that packs reports into standard corporate Word documents; PWA manifest and service worker configuration enable direct desktop installation and offline caching
+
+---
+
 ### 🤖 [AI Resume & Cover Letter Builder](https://github.com/azaurov/resume_builder)
 > *TypeScript · React · Node.js/Express · Anthropic Claude API*
 
