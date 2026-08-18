@@ -32,16 +32,16 @@ Cross-platform Electron desktop app that polls live OS processes every 5 seconds
 
 ---
 
-### 🚨 [Incident Commander](https://github.com/azaurov/Incident-Commander) — AI Incident Simulator & Postmortem Autopilot
-> *React · Vite · JavaScript · Groq API / OpenRouter · docx*
+### 🚨 [Incident Ops](https://github.com/azaurov/incident-ops) — AI Incident Simulator & Postmortem Autopilot
+> *React · Vite · Cloudflare Workers · Workers KV · Groq API / OpenRouter*
 
-An interactive incident triage simulator and automated post-mortem generator. Users can test their operational triage speed and diagnostic accuracy under pressure across multiple domains, or instantly parse messy incident chat logs, threads, and notes into professional, shippable retro documents using the **two-pass LLM pipeline** (Groq / OpenRouter).
+An interactive incident triage simulator and automated post-mortem generator. Simulate an incident, triage it against the clock, get graded against a hidden ground-truth root cause — then watch the Autopilot tab's real extract→narrate pipeline write up the post-mortem from the same raw logs. Static React client on GitHub Pages talking to a Cloudflare Worker API — no server to run. **[Try it live →](https://azaurov.github.io/incident-ops/)**
 
-- **Incident Triage Simulator** — 4 simulated outage domains (Financial Ops, Job Scheduling, API Gateway, DB Replication) featuring drip-fed log feeds, active countdown timers, and diagnostic scoring metrics (severity, RCA hypothesis, escalation targets)
-- **Two-Pass Autopilot Pipeline** — Pass 1 extracts pure chronological timeline and isolation boundaries into structured JSON; Pass 2 builds executive-level summaries and Root Cause Analysis (RCA) narratives, preventing output structure drifting
-- **Section Regeneration** — surgical AI updates allowing you to refresh specific post-mortem sections (e.g. executive summary, action items) without recalculating the entire report
-- **Zero-Server Standalone App** — bundles all assets, styles, and Javascript inline into a single static `index.html` via `vite-plugin-singlefile`, allowing offline double-click operation
-- **DOCX & PWA Enabled** — client-side OpenXML generator that packs reports into standard corporate Word documents; PWA manifest and service worker configuration enable direct desktop installation and offline caching
+- **Incident Triage Simulator** — 4 simulated outage domains (Financial Ops, Job Scheduling, API Gateway, DB Replication) with drip-fed log feeds, a countdown timer, and diagnostic scoring (severity accuracy, RCA match, decision quality) against a true root cause kept server-side until grading
+- **Extract → Narrate Autopilot Pipeline** — one pass turns messy incident data (Slack threads, raw logs, freeform notes) into a structured timeline/root-cause/contributing-factors JSON; a second pass writes the executive summary, RCA narrative, and prioritized action items from those extracted facts
+- **Cloudflare Worker backend** — the four API routes (`/api/extract`, `/api/narrate`, `/api/scenario`, `/api/grade`) run as a single Worker; scenario ground-truth is held in Workers KV, keyed per session and single-use (deleted after grading) so it can't be read from devtools or replayed
+- **Groq with automatic OpenRouter fallback** — primary calls go to Groq's OpenAI-compatible endpoint; any non-2xx (rate limit, retired model, etc.) fails over to OpenRouter's free tier automatically, no user-visible error
+- **DOCX export** — client-side OpenXML generator packages the finished post-mortem into a standard corporate Word document
 
 ---
 
