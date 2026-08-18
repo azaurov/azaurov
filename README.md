@@ -23,7 +23,7 @@ A cross-platform language learning app teaching 7 ancient and classical language
 ### 🛡️ [SentinelWatch](https://github.com/azaurov/SentinelWatch) — AI Process Monitor
 > *Electron · Node.js · Cloudflare Workers · Groq API · contextBridge IPC · PowerShell · ps aux*
 
-Cross-platform Electron desktop app that polls live OS processes every 5 seconds, flags any process sustained at ≥10% CPU for 10+ minutes as `HANGING`, and surfaces **Groq AI-generated triage recommendations** on click. The desktop app talks to a small Cloudflare Worker proxy (built on the Worker's `fetch` handler) that forwards to Groq's OpenAI-compatible chat-completions endpoint — no LLM SDK dependency, and no API key ever ships client-side.
+Cross-platform Electron desktop app that polls live OS processes every 5 seconds, flags any process sustained at ≥10% CPU for 10+ minutes as `HANGING`, and surfaces **Groq AI-generated triage recommendations** on click. The desktop app talks to a small Cloudflare Worker proxy (built on the Worker's `fetch` handler) that forwards to Groq's OpenAI-compatible chat-completions endpoint — no LLM SDK dependency, and no API key ever ships client-side. **[Try the AI diagnosis proxy →](https://sentinelwatch-groq-proxy.azaurov.workers.dev/)**
 
 - **Hang detection**: rolling per-process state tracked across polls; Windows CPU% derived from `Get-Process` CPU-time delta normalized by core count; Linux/macOS uses `ps aux` CPU% directly
 - **AI diagnosis via a Cloudflare Worker → Groq**: the Worker holds `GROQ_API_KEY` as a Cloudflare secret and proxies to Groq (default model `openai/gpt-oss-120b`, overridable via the Worker's `GROQ_MODEL`); structured output (What it is / Why hanging / Risk / Recommended action) parsed from a system-prompt template
