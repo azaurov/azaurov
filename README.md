@@ -73,7 +73,7 @@ A pure-HTML recreation of the arcade classic. A nostalgic side project focused o
 
 ---
 
-### 🤖 [Zeev](https://github.com/azaurov/Zeev)
+### 🤖 [Zeev](https://github.com/azaurov/Zeev) · [landing page](https://claude.ai/code/artifact/685adeed-74be-4400-8375-b2710b40e64f)
 > *Python · Groq API · Piper TTS · SQLite · Raspberry Pi Zero 2W*
 
 Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Groq's 8B, 70B, and DeepSeek R1 models per message; falls back to a local Ollama server when offline. Per-model rate-limit tracking automatically falls back to 8B when 70B/R1 hits a Groq daily or burst limit, and to OpenRouter's free tier if Groq itself is rate-limited — no errors surfaced to the user.
@@ -93,6 +93,7 @@ Personal AI companion running on a Raspberry Pi Zero 2W. Auto-routes between Gro
 - **Low-battery plea**: below 10% on the PiSugar, Zeev and Sarina both ask — in their own voices, alternating — to be plugged in, re-asking every five minutes until charging begins and re-arming on the next unplug; the plea waits for a free moment rather than talking over a live conversation, and names the PiSugar's own port, since the Pi's power port bypasses the battery entirely. Below 2% it says goodbye and shuts down cleanly
 - **Voice-triggered LCD visuals**: say "show me some fire" or "do the matrix effect" in device mode and Zeev/Sarina renders demoscene-style fire, matrix rain, psychedelic, liquid, tunnel, plasma, or cartoon-face animations directly on the Whisplay LCD
 - **Reactive aura face**: the always-on LCD display is a single pulsing orb with 8 radiating spokes rather than a static character — idle breathes slowly, thinking sweeps one bright spoke around the ring radar-style, and speaking drives the spokes from the real per-band audio spectrum
+- **Morning-serenade alarm**: a one-time wake-up alarm ("put an alarm for 9am") plays as a two-voice duet — Zeev, then Sarina — instead of the flat 7am daily greeting, using the same reminders table rather than a separate schedule so it fires once and is gone
 
 ---
 
